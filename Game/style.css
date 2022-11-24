@@ -1,0 +1,110 @@
+body {
+    font-size: 32px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.game-area {
+    position: relative;
+    background: rgb(61, 160, 240);
+    background: linear-gradient(0deg, rgb(17, 204, 51) 0%,
+            rgba(192, 221, 246, 1) 3%,
+            rgba(55, 157, 244, 1) 100%);
+    width: 100%;
+    height: 93vh;
+    margin: 0;
+}
+
+.game-start {
+    position: absolute;
+    width: 30%;
+    background-color: yellowgreen;
+    border-radius: 30px;
+    top: 100px;
+    left: 35%;
+    z-index: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.game-score {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.player {
+    z-index: 100;
+    position: absolute;
+    width: 82px;
+    height: 100px;
+    background-image: url(./images/wizard.png);
+    background-size: cover
+}
+
+.shooting {
+    background-image: url(./images/wizard-fire.png);
+    background-size: cover;
+}
+
+.projectile {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/BlindFirstJohndory-size_restricted.gif');
+    background-size: cover;
+}
+
+.cloud {
+    z-index: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url('./images/cloud.png');
+    background-size: cover;
+}
+
+.enemy {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/bug.png);
+    background-size: cover;
+}
+
+.game-over {
+    position: absolute;
+    width: 50%;
+    background-color: red;
+    top: 100px;
+    left: 25%;
+    z-index: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.high-score {
+    position: absolute;
+    text-align: left;
+}
+
+.play-again {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 50px 100px;
+    border: none;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: linear-gradient(to right, rgb(30, 230, 47) 0%, rgb(127, 227, 28) 50%, rgb(4, 215, 36) 100%);
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 34.5%;
+}
